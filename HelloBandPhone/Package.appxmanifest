@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
+
+  <Identity Name="df32958c-8a0e-4953-bd86-b5fcaf6a03f4"
+            Publisher="CN=feriese"
+            Version="1.0.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="df32958c-8a0e-4953-bd86-b5fcaf6a03f4" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>HelloBandPhone</DisplayName>
+    <PublisherDisplayName>feriese</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.3.1</OSMinVersion>
+    <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+  </Prerequisites>
+  
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+        Executable="$targetnametoken$.exe"
+        EntryPoint="HelloBandPhone.App">
+        <m3:VisualElements
+            DisplayName="HelloBandPhone"
+            Square150x150Logo="Assets\Logo.png"
+            Square44x44Logo="Assets\SmallLogo.png"
+            Description="HelloBandPhone"
+            ForegroundText="light"
+            BackgroundColor="transparent">
+            <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png"/>
+            <m3:SplashScreen Image="Assets\SplashScreen.png"/>
+        </m3:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <DeviceCapability Name="proximity" />
+    <m2:DeviceCapability Name="bluetooth.rfcomm">
+      <m2:Device Id="any">
+        <!-- Cargo RFCOMM primary socket GUID -->
+        <m2:Function Type="serviceId:A502CA97-2BA5-413C-A4E0-13804E47B38F" />
+        <!-- Cargo RFCOMM Push Notification socket GUID -->
+        <m2:Function Type="serviceId:C742E1A2-6320-5ABC-9643-D206C677E580" />
+      </m2:Device>
+    </m2:DeviceCapability>
+  </Capabilities>
+</Package>
