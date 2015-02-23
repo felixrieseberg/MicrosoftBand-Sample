@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="HelloBand.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelloBand"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ListViewItemSelectedPointerOverBorderThemeBrush}">
+
+        <TextBlock x:Name="fwVersion_label" HorizontalAlignment="Left" Margin="50,164,0,0" TextWrapping="Wrap" Text="FW Version" VerticalAlignment="Top" Height="35" Width="183" FontSize="18.667" FontWeight="Bold"/>
+        <TextBlock x:Name="fwVersion_value" HorizontalAlignment="Left" Margin="238,164,0,0" TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Height="35" Width="310" FontSize="18.667"/>
+        <TextBlock x:Name="Title" HorizontalAlignment="Left" Margin="50,48,0,0" TextWrapping="Wrap" Text="Microsoft Band 'Hello Band'" VerticalAlignment="Top" Height="74" Width="1087" FontSize="48" FontFamily="Segoe UI Light"/>
+        <TextBlock x:Name="hwVersion_label" HorizontalAlignment="Left" Margin="50,204,0,0" TextWrapping="Wrap" Text="HW Version" VerticalAlignment="Top" Height="35" Width="183" FontSize="18.667" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+        <TextBlock x:Name="hwVersion_value" HorizontalAlignment="Left" Margin="238,204,0,0" TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Height="35" Width="310" FontSize="18.667"/>
+        <Button x:Name="button_vibrate" Content="Vibrate" HorizontalAlignment="Left" Margin="47,342,0,0" VerticalAlignment="Top" Height="59" Width="240" Click="Vibrate" FontSize="18.667" FontFamily="Global User Interface" IsEnabled="False"/>
+        <Button x:Name="button_getVersions" Content="Get Versions" HorizontalAlignment="Left" Margin="311,342,0,0" VerticalAlignment="Top" Height="59" Width="240" Click="GetVersions" FontSize="18.667" FontFamily="Global User Interface" IsEnabled="False"/>
+        <TextBlock x:Name="bandFound_label" HorizontalAlignment="Left" Margin="50,122,0,0" TextWrapping="Wrap" Text="Band Found" VerticalAlignment="Top" Height="35" Width="183" FontSize="18.667" FontWeight="Bold"/>
+        <TextBlock x:Name="bandFound_value" HorizontalAlignment="Left" Margin="238,122,0,0" TextWrapping="Wrap" Text="Connecting" VerticalAlignment="Top" Height="35" Width="310" FontSize="18.667"/>
+        <TextBlock x:Name="heartrate_label" HorizontalAlignment="Left" Margin="50,244,0,0" TextWrapping="Wrap" Text="Heart Rate" VerticalAlignment="Top" Height="35" Width="183" FontSize="18.667" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+        <TextBlock x:Name="heartrate_value" HorizontalAlignment="Left" Margin="238,244,0,0" TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Height="35" Width="310" FontSize="18.667"/>
+        <Button x:Name="button_getHeartRate" Content="Get Heart Rate" HorizontalAlignment="Left" Margin="580,342,0,0" VerticalAlignment="Top" Height="59" Width="240" Click="GetHeartRate" FontSize="18.667" FontFamily="Global User Interface" IsEnabled="False"/>
+    </Grid>
+</Page>

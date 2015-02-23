@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="82656439-6b8b-4f5a-a35f-a25f1e6641eb" Publisher="CN=feriese" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>HelloBand</DisplayName>
+    <PublisherDisplayName>feriese</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="HelloBand.App">
+      <m2:VisualElements DisplayName="HelloBand" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="HelloBand" ForegroundText="light" BackgroundColor="#464646">
+        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <DeviceCapability Name="proximity" />
+    <m2:DeviceCapability Name="bluetooth.rfcomm">
+      <m2:Device Id="any">
+        <!-- Cargo RFCOMM primary socket GUID -->
+        <m2:Function Type="serviceId:A502CA97-2BA5-413C-A4E0-13804E47B38F" />
+        <!-- Cargo RFCOMM Push Notification socket GUID -->
+        <m2:Function Type="serviceId:C742E1A2-6320-5ABC-9643-D206C677E580" />
+      </m2:Device>
+    </m2:DeviceCapability>
+  </Capabilities>
+</Package>
