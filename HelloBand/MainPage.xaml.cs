@@ -37,7 +37,6 @@ namespace HelloBand
         {
             this.InitializeComponent();
             ConnectWithBand();
-            
         } 
 
         public async void ConnectWithBand()
