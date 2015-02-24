@@ -12,7 +12,7 @@
 
         <TextBlock x:Name="fwVersion_label" HorizontalAlignment="Left" Margin="50,164,0,0" TextWrapping="Wrap" Text="FW Version" VerticalAlignment="Top" Height="35" Width="183" FontSize="18.667" FontWeight="Bold"/>
         <TextBlock x:Name="fwVersion_value" HorizontalAlignment="Left" Margin="238,164,0,0" TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Height="35" Width="310" FontSize="18.667"/>
-        <TextBlock x:Name="Title" HorizontalAlignment="Left" Margin="50,48,0,0" TextWrapping="Wrap" Text="'Hello Band'" VerticalAlignment="Top" Height="74" Width="1087" FontSize="48" FontFamily="Segoe UI Light" SelectionChanged="Title_SelectionChanged"/>
+        <TextBlock x:Name="Title" HorizontalAlignment="Left" Margin="50,48,0,0" TextWrapping="Wrap" Text="'Hello Band'" VerticalAlignment="Top" Height="74" Width="1087" FontSize="48" FontFamily="Segoe UI Light"/>
         <TextBlock x:Name="hwVersion_label" HorizontalAlignment="Left" Margin="50,204,0,0" TextWrapping="Wrap" Text="HW Version" VerticalAlignment="Top" Height="35" Width="183" FontSize="18.667" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
         <TextBlock x:Name="hwVersion_value" HorizontalAlignment="Left" Margin="238,204,0,0" TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top" Height="35" Width="310" FontSize="18.667"/>
         <Button x:Name="button_vibrate" Content="Vibrate" HorizontalAlignment="Left" Margin="50,442,0,0" VerticalAlignment="Top" Height="59" Width="240" Click="Vibrate" FontSize="18.667" FontFamily="Global User Interface" IsEnabled="False"/>
